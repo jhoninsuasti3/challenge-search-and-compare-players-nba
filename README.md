@@ -38,8 +38,8 @@ La api fue desplegada en heroku, Y ESTA DISPONIBLE PARA QUE SE PUEDA CONSUMIR DE
 
 # Datos para test
 
-En el directorio test se encuentra un archivo .py se crean test para validar Y/O REALIZAR los test de lo datos que se deben buscar y los que el usuario digitaria.
-Se crearon dos funciones adicionales para la validacion de estado del recurso por consumo de API
+En el directorio test del proyecto se encuentra un archivo test_nba_api.py se crean test para validar Y/O REALIZAR los test de lo datos que se deben buscar y los que el usuario digitaria.
+
 
 # IMPLEMENTACION - Requerimientos para desplegar toda la solucion localmente con API
 1. Para probar unicamente la solucion algoritmica -> PYTHON 3 o superior

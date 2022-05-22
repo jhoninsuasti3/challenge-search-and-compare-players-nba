@@ -23,6 +23,9 @@ Si no se encuentran coincidencias, la aplicación imprime "No se encontraron coi
 "h_meters": "1.96",
 "last_name": "Acker"
 
+
+fullname = first_name + " " + last_name
+
 Ejemplo de salida de la siguiente manera:
 ```
 > app 139

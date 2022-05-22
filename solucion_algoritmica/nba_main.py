@@ -1,7 +1,16 @@
+# Test challenge nba height players nba
+# Dev @jhoninsuasti3
+# Date : 22-05-2022
+
+
 import json
 import requests
+#import nba_players_data_app.constants   as cons
 
-""" Search information in data returned"""
+
+""" 
+    Search information in data returned
+"""
 def search(valuenumeric):
     response = requests.get("https://mach-eight.uc.r.appspot.com/")
     return_data = json.loads(response.text)
@@ -19,11 +28,15 @@ def search(valuenumeric):
         idx_map[h_in] = idx  
     return response_final
 
-""" Obtain values data for print"""
+""" 
+    Obtain values data for print
+"""
 def get_player_data(player):
     return f"{player['first_name']} {player['last_name']} "
 
-"""Main program, verification logyc in input and output"""
+"""
+    Main program, verification logyc in input and output
+"""
 def main():
         try:
             valuenumeric = int(input("Insert value numeric: "))
