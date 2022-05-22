@@ -15,6 +15,7 @@ def test_get_nba_data():
     assert len(response_mock_1.json()["results"]) > 0
     assert response_mock_1.status_code == 200
     assert response_mock_2.json() =={'results': 'Please enter values greater than zero and of integer type'}
+
 def test_endpoint_not_found():
     response = client.get("/api/v1/fake_resource")
     assert response.status_code == 404

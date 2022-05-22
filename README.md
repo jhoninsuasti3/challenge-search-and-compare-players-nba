@@ -13,21 +13,12 @@ Se tuvieron las siguientes rutas para abordar el desarrollo del proyecto
         "ambas": " Se utiliza la libreria de test"
     }
 
-# Datos y requerimientos para solucion algoritmica sin API
+# Datos y requerimientos para solucion algoritmica
 
-En el reposotorio enviado encontraras una carpeta 
-
-
-# Requerimientos para desplegar toda la solucion localmente con API
-1. Para probar unicamente la solucion algoritmica -> PYTHON 3 o superior
-2. Para desplegar el proyecto localmente debes tener instalado docker
-
-
-    - Levantar el proyecto -> docker-compose up
-    - Luego ir a http://localhost:8000/docs
-    - Ejecutar tests, para ejecutar el siguiente comando debe estar en el directorio del proyecto al mismo nivel del archivo docker-compose.yml
-    - docker-compose run api_nba_service pytest tests
-
+En el reposotorio enviado encontraras una carpeta con el nombre de solucion_algoritmica.
+Debes ejecutar el arhivo en la terminal o con el interprete de python, solo debes correrlo ejecutando:
+    py nba-main.py
+        - Alli en consola se solicta el valor numerico para ingresar y entregara el resultado
 
 # Datos para API
 
@@ -49,3 +40,12 @@ La api fue desplegada en heroku, Y ESTA DISPONIBLE PARA QUE SE PUEDA CONSUMIR DE
 
 En el directorio test se encuentra un archivo .py se crean test para validar Y/O REALIZAR los test de lo datos que se deben buscar y los que el usuario digitaria.
 Se crearon dos funciones adicionales para la validacion de estado del recurso por consumo de API
+
+# IMPLEMENTACION - Requerimientos para desplegar toda la solucion localmente con API
+1. Para probar unicamente la solucion algoritmica -> PYTHON 3 o superior
+2. Para desplegar el proyecto localmente debes tener instalado docker
+
+    - Levantar el proyecto -> docker-compose up
+    - Luego ir a http://localhost:8000/docs
+    - Ejecutar tests, para ejecutar el siguiente comando debe estar en el directorio del proyecto al mismo nivel del archivo docker-compose.yml
+    - docker-compose run api_nba_service pytest tests
